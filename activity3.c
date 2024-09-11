@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Solomon Dawit and Nicholas Lobaugh
+
 // Include the header file containing the prototypes (declarations) of
 // functions defined in the helper file string_funcs.c
 #include "string_funcs.h"
 
 // Declarations of functions defined below
 void task1();
-int arg_modifier(int x, int *y);
 
 void task2();
 void init_array(int nums[], int len, int mult);
@@ -18,7 +19,7 @@ void task3();
 
 int main() {
     // Task 1: call the first example to show how a pointer to int works
-    // task1();
+    task1();
 
     // Task 2: call the second example that creates static and dynamic arrays
     task2();
@@ -52,9 +53,9 @@ void task1() {
     /*
      * uncomment to test passing val2 by value and val1 by pointer
      */
-    //printf("before 2nd call: val1 = %d val2 = %d\n", val1, val2);
-    //ret = arg_modifier(val2, &val1);
-    //printf("after 2nd call: val1 = %d val2 = %d\n", val1, val2);
+    printf("before 2nd call: val1 = %d val2 = %d\n", val1, val2);
+    ret = arg_modifier(val2, &val1);
+    printf("after 2nd call: val1 = %d val2 = %d\n", val1, val2);
 }
 
 /*
