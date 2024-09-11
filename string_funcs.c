@@ -1,6 +1,8 @@
 /* Contains a library of string manipulation functions; no "main" function
 because it is meant to be a library*/
 
+// Solomon Dawit and Nicholas Lobaugh
+
 #include<stdio.h>
 
 /* Copies String t to s using array indexing */
